@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORM</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+    <div class="jumbotron">
+        <div class="ORDER">
+        <h1>* FORM ORDER *</h1>
+        </div>
+        <p>Silahkan isi detail pada tabel produk yang akan kamu titipkan dibawah ini, mohon isi dengan teliti
+        </p>
+    </div>
+
+    <form action="" method="">
+        <div class="form">
+            <fieldset>
+                <legend>
+                    <h3>INFORMASI PRODUK</h3>
+                </legend>
+                <div class="row">
+                    <label><b>URL</b></label>
+                    <input type="url" name="url" placeholder="https://" />
+                </div>
+                <div class="row">
+                    <label><b>Nama Produk</b></label>
+                    <input type="text" name="namaproduk" placeholder="Tulis Nama Produk" />
+                </div>
+                <div class="row">
+                    <label><b>Kategori Produk</b></label>
+                    <select name="kategori">
+                        <option value="gadget">Elektronik</option>
+                        <option value="fashion">Fashion</option>
+                        <option value="sembako">Sembako</option>
+                        <option value="perabot">Peralatan Dapur</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <label><b>Harga/Pcs</b></label>
+                    <div class="hg">
+                        <input type="number" name="harga" placeholder="Tulis Harga Produk" />
+                        <select name="matauang">
+                            <option value="usd">IDR</option>
+                            <option value="idr">KRW</option>
+                            <option value="yen">Yen</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div>
+                        <label class="lb"><b>Berat Produk/Pcs</b></label>
+                        <label><b>Ukuran (P x L x T)</b></label>
+                        <div class="bu">
+                            <input type="number" name="berat" placeholder="Berat" />
+                            <select name="gram">
+                                <option value="gram">Gram</option>
+                                <option value="liter">Liter</option>
+                            </select>
+                            <input type="number" name="ukuran" placeholder="Lebar" />
+                            <input type="number" name="ukuran" placeholder="Tinggi" />
+                            <input type="number" name="ukuran" placeholder="Panjang" />
+                            <select name="cm">
+                                <option value="cm">Cm</option>
+                                <option value="m">M</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <label><b>Catatan</b></label>
+                    <textarea name="catatan" placeholder="Contoh : Alamat web jika ada, Tas, Fashion, 1 PCS, Rp.120.000, 500gr, P=45cm, T=20cm, L=10cm, "></textarea>
+                </div>
+                <div class="row">
+                    <label for="jumlah"><b>Jumlah</b></label>
+                    <div class="aa">
+                        <button>-</button>
+                        <input type="text" name="jumlah" id="" value="1" class="control">
+                        <button>+</button>
+                    </div>
+                </div>
+                <div class="row">
+                    <label><b>Negara</b></label>
+                    <div>
+                        <select name="negara">
+                            <option value="indonesia">Indonesia</option>
+                            <option value="usa">Korea</option>
+                            <option value="japan">Japan</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="gambar">
+                        <label for="upload"> <b>Upload Image</b> <br> <b>(Maks. 2.5 MB)</b>                     
+                            <img src="image/add.png" alt="">
+                        </label>
+                        <input type="file" name="upload" id="upload">
+                    </div>
+                </div>
+                <div class="row">
+                    <input type="submit" name="tambah" value="Tambah Keranjang" />
+                    <input type="submit" name="beliin" value="Beliin" />
+                </div>
+            </fieldset>
+        </div>
+    </form>
+
+</body>
+
+</html>
